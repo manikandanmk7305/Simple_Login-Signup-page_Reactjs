@@ -4,7 +4,7 @@ export const Order = () => {
     const navigate=useNavigate()
   return (
     <div>
-        order confirmation page
+        order confirmation page<br></br><br></br>
         <button onClick={()=>navigate(-1)}>Go back</button>
     </div>
   )

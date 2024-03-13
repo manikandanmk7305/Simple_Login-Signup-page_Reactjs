@@ -13,11 +13,60 @@ code {
 }
 .navbar{
   background-color: deepskyblue;
-  padding: 20px;
+  padding: 20px 17px;
   display: flex;
   font-size: 25px;
   justify-content: space-evenly;
+  align-items: center;
 }
-a{
+.navbar a{
   text-decoration: none;
+  margin-right: 15px;
+  color: white;
+}
+.navbar a.active{
+  background-color: lightblue;
+  color: black;
+  padding: 10px;
+}
+form{
+  border: 1px solid black;
+  border-radius: 10px;
+  background: #57375D;
+  margin: 200px;
+  margin-left: 550px;
+  margin-right: 550px;
+  padding: 35px;
+}
+input{
+  width: 100%;
+  border-radius: 10px;
+}
+label{
+  color: white;
+  font-family: sans-serif;
+}
+form a{
+  text-decoration: none;
+}
+.flink{
+  color: white;
+}
+.flink:hover{
+  text-decoration: underline;
+}
+button{
+  border-radius: 10px;
+  background-color: #11009E;
+  color: white;
+  height: 30px;
+  /* width: 70px; */
+}
+button:hover{
+  background-color: #1a75ff;
+  color: white;
+
+}
+h2{
+  color: white;
 }

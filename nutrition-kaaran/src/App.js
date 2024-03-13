@@ -12,10 +12,15 @@ import {New} from './component/New';
 import { Userdel } from './component/Userdel';
 import { Nomatch } from './component/Nomatch';
 import { Order } from './component/Order';
+import { Profile } from './component/Profile';
+import { Login } from './component/Login';
+import {Signup} from './component/Signup';
+import { Auth } from './component/Auth';
 function App() {
   return (
     <div className="App">
-      {/* <Auth></Auth> */}
+      
+      <Auth>
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
@@ -33,7 +38,13 @@ function App() {
         <Route path='/users' element={<Users/>}>
           <Route path=':userId' element={<Userdel/>}/>
           </Route>
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/profile' element={<Profile>
+          <Profile/>
+        </Profile>}/>
+        <Route path='/signup' element={<Signup/>}/>
       </Routes>
+      </Auth>
     </div>
   );
 }
